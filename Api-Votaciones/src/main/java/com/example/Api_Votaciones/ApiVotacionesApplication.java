@@ -1,5 +1,6 @@
 package com.example.Api_Votaciones;
 
+import com.example.Api_Votaciones.datos.Votaciones;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -10,7 +11,7 @@ public class ApiVotacionesApplication {
 	public static void main(String[] args) {
 
 		ApplicationContext context = SpringApplication.run(ApiVotacionesApplication.class, args);
-		//PersonalRepository repository1 = context.getBean(PersonalRepository.class);
+		Votaciones votaciones = context.getBean(Votaciones.class);
 
 
 	}

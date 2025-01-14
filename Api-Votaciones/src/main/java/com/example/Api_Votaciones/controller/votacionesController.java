@@ -16,7 +16,8 @@ public class votacionesController {
         this.votaciones = votaciones;
     }
 
-    //Revisar por que no me funciona con post
+    //Revisar por que no me funciona con post y añadir funcionalidades web
+
     @GetMapping("/voto/{nombre}")
     public void voto(@PathVariable String nombre){
         this.votaciones.addVoto(nombre);
